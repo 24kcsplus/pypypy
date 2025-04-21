@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: 24kcsplus/pypypy
     container_name: pypypy
     command: ["/bin/sh", "-c", "python app.py & python flag.py"]
     ports:
