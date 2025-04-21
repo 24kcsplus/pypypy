@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pypypy
+    command: ["/bin/sh", "-c", "python app.py & python flag.py"]
+    ports:
+      - "5000:5000"
+    # 如果你没有域名，请将以下条目取消注释然后按实际情况填写
+    # extra_hosts:
+    #   - "example.local:192.168.1.100"
