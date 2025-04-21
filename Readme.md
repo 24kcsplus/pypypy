@@ -5,6 +5,7 @@ docker-compose.yml 可能需要修改，请先查看 docker-compose.yml
 ```shell
 git clone https://github.com/24kcsplus/pypypy
 # 克隆后按需修改docker-compose.yml
+cd pypypy
 docker-compose up --build -d
 ```
 
